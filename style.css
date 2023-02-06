@@ -1,0 +1,108 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+:root {
+  --black: #000000;
+  --gray: #808080;
+  --orange: #fe5d20;
+  --purple: #8071d0;
+  --light-orange: #fd6534;
+  --pink: #ffd8db;
+  --light-pink: #fed7da;
+  --light-purple: #a389cc;
+  --dark-purple: #5243c0;
+  --green: #9ed095;
+  --yellow: #ffe4a0;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+li,
+a,
+button {
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 70px;
+  max-width: 100%;
+}
+
+header .logo {
+  width: 180px;
+  cursor: pointer;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 40px;
+}
+
+header nav ul li a:hover {
+  border-bottom: 3px solid var(--dark-purple);
+  color: var(--black);
+}
+
+header nav ul li a {
+  color: var(--gray);
+}
+
+header a.account {
+  color: var(--dark-purple);
+  padding: 20px 35px;
+  background-color: var(--pink);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+
+header nav ul li a.active {
+  border-bottom: 3px solid var(--dark-purple);
+  color: var(--black);
+}
+
+header a.account:hover {
+  background-color: #f15f60;
+  color: var(--white);
+}
+
+@media only screen and (max-width: 1010px) {
+  header {
+    margin: 30px 70px;
+  }
+  header nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    margin: 20px;
+  }
+  header .logo {
+    width: 100px;
+  }
+  header a.account {
+    padding: 10px 15px;
+    font-size: 12px;
+  }
+}
