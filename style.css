@@ -105,4 +105,8 @@ header a.account:hover {
     padding: 10px 15px;
     font-size: 12px;
   }
+  header a.account{
+    background-color: #f15f60;
+    color: var(--white);
+  }
 }
