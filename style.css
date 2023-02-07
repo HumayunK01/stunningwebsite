@@ -24,6 +24,16 @@
   text-decoration: none;
 }
 
+.button {
+  padding: 20px 35px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease 0s;
+}
+
 li,
 a,
 button {
@@ -112,5 +122,242 @@ header a.account:hover {
   header a.account {
     background-color: #f15f60;
     color: var(--white);
+  }
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+}
+
+main .left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+main .left .heading {
+  font-size: 5rem;
+  width: 300px;
+}
+
+main .left .subheading {
+  font-size: 17px;
+  width: 500px;
+  line-height: 30px;
+  margin-top: 10px;
+  color: var(--gray);
+}
+
+main .left span {
+  height: 20px;
+  width: 20px;
+  color: var(--dark-purple);
+}
+
+main .left .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+main .left .buttons a {
+  color: var(--white);
+  padding: 22px 40px;
+  background-color: var(--dark-purple);
+  border: none;
+  border-radius: 28px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+
+main .left .buttons img {
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 40%;
+}
+
+main .left .buttons img:hover {
+  filter: brightness(90%);
+}
+
+/* ********** Table CSS ********** */
+
+main .left .table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+main .left .table .card {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+main .left .table .card h3,
+p {
+  font-weight: 500;
+}
+
+main .left .table .card {
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+main .left .table .card:hover {
+  background-color: var(--white);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+main .left .table .card .info {
+  display: flex;
+}
+
+main .left .table .card .info2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main .left .table .card .info h3 {
+  padding-left: 10px;
+  width: 200px;
+}
+
+main .left .table .card .color {
+  width: 20px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--pink);
+}
+
+main .left .table .card .color3 {
+  width: 20px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--green);
+}
+
+main .left .table .card .color4 {
+  width: 20px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--yellow);
+}
+
+main .left .table .card p {
+  color: var(--gray);
+}
+
+main .left .table .card2 {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+main .left .table .card2 .info2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+main .left .table .card2 h3,
+p {
+  font-weight: 500;
+}
+
+main .left .table .card2 {
+  background-color: var(--white);
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  width: 100%;
+  border-radius: 20px;
+}
+
+main .left .table .card2 .info {
+  display: flex;
+}
+
+main .left .table .card2 .info h3 {
+  padding-left: 10px;
+  width: 200px;
+}
+
+main .left .table .card2 .color {
+  width: 20px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--orange);
+}
+
+main .left .table .card2 p {
+  color: var(--gray);
+}
+
+main .right {
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1241px) {
+  header {
+    margin: 20px;
+  }
+  main .left .heading {
+    font-size: 60px;
+  }
+  main .left .subheading {
+    font-size: 16px;
+    width: 400px;
+  }
+  main .right img {
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  main .left .heading {
+    font-size: 40px;
+    width: 400px;
+  }
+  main .left .subheading {
+    font-size: 14px;
+  }
+  main .container {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+  }
+  main .right img {
+    max-width: 340px;
+  }
+  .container .left .buttons a {
+    padding: 20px 25px;
+    font-size: 12px;
+    border-radius: 23px;
+    color: var(--white);
+    background-color: var(--dark-purple);
+  }
+  .left .table {
+    width: 400px;
+    margin-bottom: 20px;
   }
 }
