@@ -336,12 +336,10 @@ main .right {
   main .left .heading {
     font-size: 30px;
     width: 330px;
-    margin-left: 10px;
   }
   main .left .subheading {
     font-size: 12px;
     width: 330px;
-    margin-left: 10px;
   }
   main .container {
     display: flex;
@@ -354,7 +352,6 @@ main .right {
     max-width: 300px;
   }
   .container .left .buttons a {
-    margin-left: 10px;
     padding: 20px 25px;
     font-size: 12px;
     border-radius: 23px;
