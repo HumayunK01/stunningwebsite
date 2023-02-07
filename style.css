@@ -362,31 +362,31 @@ main .right {
     width: 330px;
     margin-bottom: 20px;
   }
-  main .left .table .card{
+  main .left .table .card {
     width: auto;
   }
-  main .left .table .card .info{
+  main .left .table .card .info {
     align-items: center;
   }
-  main .left .table .card .info h3{
+  main .left .table .card .info h3 {
     font-size: 15px;
     width: 120px;
   }
-  main .left .table .card .info2{
+  main .left .table .card .info2 {
     font-size: 13px;
     width: 120px;
   }
-  main .left .table .card2{
+  main .left .table .card2 {
     width: auto;
   }
-  main .left .table .card2 .info{
+  main .left .table .card2 .info {
     align-items: center;
   }
-  main .left .table .card2 .info h3{
+  main .left .table .card2 .info h3 {
     font-size: 15px;
     width: 130px;
   }
-  main .left .table .card2 .info2{
+  main .left .table .card2 .info2 {
     font-size: 13px;
     width: 120px;
   }
